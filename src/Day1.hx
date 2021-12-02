@@ -1,8 +1,4 @@
-package src;
-
-import sys.io.File;
-
-using StringTools;
+import utils.FileServices;
 
 class Day1 {
     public var solutionOne:Int;
@@ -22,8 +18,8 @@ class Day1 {
     260
     263";
 
-    static inline public function run() {
-        var raw = File.getContent("input/day1.txt").split("\n");
+    static public function run() {
+        var raw = FileServices.textAsArray("input/day1.txt");
         //var raw = test.split("\n");
         return new Day1(raw);
     }
@@ -36,8 +32,7 @@ class Day1 {
 
         // Part 1
         for (e in raw) {
-            if (e != null && e != "")
-                this.values.push(Std.parseInt(e.trim()));
+            this.values.push(Std.parseInt(e));
         }
 
         for (i in 1...this.values.length) {

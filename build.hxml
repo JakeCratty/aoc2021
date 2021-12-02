@@ -4,7 +4,15 @@
 
 --each
 
---neko bin/Main.n
+--neko bin/neko_main.n
+
+--next
+
+--python bin/python_main.py
+
+--next
+
+--jvm bin/jvm_main.jar
 
 --next
 
