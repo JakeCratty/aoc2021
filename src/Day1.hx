@@ -25,6 +25,7 @@ class Day1 {
     }
 
     private function new(raw:Array<String>) {
+        trace("Day 1");
         this.solutionOne = 0;
         this.solutionTwo = 0;
         this.values = [];
